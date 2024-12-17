@@ -1,0 +1,2 @@
+# Integer Overflow Bug in Hack Functions
+This repository demonstrates a potential integer overflow bug in Hack functions.  The `baz` function is composed of three nested functions that sequentially perform addition, multiplication, and subtraction.  If the input value is sufficiently large, an intermediate calculation may exceed the maximum representable integer value, leading to integer overflow. This overflow can cause unexpected results or program crashes. The solution involves using a data type that can handle larger numbers, such as `int64`. 
